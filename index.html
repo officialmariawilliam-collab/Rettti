@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Video Flow</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  background:#000;
+  font-family:sans-serif;
+  color:#fff;
+}
+
+/* PAGE WIDTH (NO LONG STRIP ISSUE) */
+.page{
+  max-width:420px;
+  margin:0 auto;
+}
+
+/* EACH VIDEO SCREEN */
+.video-box{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+/* VIDEO AREA */
+.video-wrap{
+  height:70vh;
+  background:#000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:14px;
+  overflow:hidden;
+}
+
+video{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  background:#000;
+}
+
+/* BUTTONS */
+.actions{
+  margin-top:12px;
+  display:flex;
+  gap:10px;
+}
+
+.btn{
+  flex:1;
+  padding:12px;
+  border-radius:10px;
+  text-align:center;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.download{
+  background:#e74c3c;
+  color:#fff;
+}
+
+.next{
+  background:#2ecc71;
+  color:#000;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<!-- VIDEO 1 -->
+<div class="video-box" id="v1">
+  <div class="video-wrap">
+    <video controls playsinline onclick="playWithAd(this,'ADSTERRA_1')">
+      <source src="VIDEO_1.mp4">
+    </video>
+  </div>
+  <div class="actions">
+    <a class="btn download" href="ADSTERRA_1" target="_blank">Download</a>
+    <a class="btn next" href="#v2">Next</a>
+  </div>
+</div>
+
+<!-- VIDEO 2 -->
+<div class="video-box" id="v2">
+  <div class="video-wrap">
+    <video controls playsinline onclick="playWithAd(this,'ADSTERRA_2')">
+      <source src="VIDEO_2.mp4">
+    </video>
+  </div>
+  <div class="actions">
+    <a class="btn download" href="ADSTERRA_2" target="_blank">Download</a>
+    <a class="btn next" href="#v3">Next</a>
+  </div>
+</div>
+
+<!-- VIDEO 3 -->
+<div class="video-box" id="v3">
+  <div class="video-wrap">
+    <video controls playsinline onclick="playWithAd(this,'ADSTERRA_3')">
+      <source src="VIDEO_3.mp4">
+    </video>
+  </div>
+  <div class="actions">
+    <a class="btn download" href="ADSTERRA_3" target="_blank">Download</a>
+    <a class="btn next" href="#v4">Next</a>
+  </div>
+</div>
+
+<!-- VIDEO 4 -->
+<div class="video-box" id="v4">
+  <div class="video-wrap">
+    <video controls playsinline onclick="playWithAd(this,'ADSTERRA_4')">
+      <source src="VIDEO_4.mp4">
+    </video>
+  </div>
+  <div class="actions">
+    <a class="btn download" href="ADSTERRA_4" target="_blank">Download</a>
+    <a class="btn next" href="#v5">Next</a>
+  </div>
+</div>
+
+<!-- VIDEO 5 -->
+<div class="video-box" id="v5">
+  <div class="video-wrap">
+    <video controls playsinline onclick="playWithAd(this,'ADSTERRA_5')">
+      <source src="VIDEO_5.mp4">
+    </video>
+  </div>
+  <div class="actions">
+    <a class="btn download" href="ADSTERRA_5" target="_blank">Download</a>
+    <a class="btn next" href="#v6">Next</a>
+  </div>
+</div>
+
+<!-- VIDEO 6 -->
+<div class="video-box" id="v6">
+  <div class="video-wrap">
+    <video controls playsinline onclick="playWithAd(this,'ADSTERRA_6')">
+      <source src="VIDEO_6.mp4">
+    </video>
+  </div>
+  <div class="actions">
+    <a class="btn download" href="ADSTERRA_6" target="_blank">Download</a>
+    <a class="btn next" href="#v7">Next</a>
+  </div>
+</div>
+
+<!-- VIDEO 7 -->
+<div class="video-box" id="v7">
+  <div class="video-wrap">
+    <video controls playsinline onclick="playWithAd(this,'ADSTERRA_7')">
+      <source src="VIDEO_7.mp4">
+    </video>
+  </div>
+  <div class="actions">
+    <a class="btn download" href="ADSTERRA_7" target="_blank">Download</a>
+    <a class="btn next" href="#v8">Next</a>
+  </div>
+</div>
+
+<!-- VIDEO 8 -->
+<div class="video-box" id="v8">
+  <div class="video-wrap">
+    <video controls playsinline onclick="playWithAd(this,'ADSTERRA_8')">
+      <source src="VIDEO_8.mp4">
+    </video>
+  </div>
+  <div class="actions">
+    <a class="btn download" href="ADSTERRA_8" target="_blank">Download</a>
+    <a class="btn next" href="#v9">Next</a>
+  </div>
+</div>
+
+<!-- VIDEO 9 -->
+<div class="video-box" id="v9">
+  <div class="video-wrap">
+    <video controls playsinline onclick="playWithAd(this,'ADSTERRA_9')">
+      <source src="VIDEO_9.mp4">
+    </video>
+  </div>
+  <div class="actions">
+    <a class="btn download" href="ADSTERRA_9" target="_blank">Download</a>
+    <a class="btn next" href="#v10">Next</a>
+  </div>
+</div>
+
+<!-- VIDEO 10 -->
+<div class="video-box" id="v10">
+  <div class="video-wrap">
+    <video controls playsinline onclick="playWithAd(this,'ADSTERRA_10')">
+      <source src="VIDEO_10.mp4">
+    </video>
+  </div>
+  <div class="actions">
+    <a class="btn download" href="ADSTERRA_10" target="_blank">Download</a>
+    <a class="btn next" href="#v1">Restart</a>
+  </div>
+</div>
+
+</div>
+
+<script>
+function playWithAd(video, link){
+  if(!video.dataset.adOpened){
+    video.dataset.adOpened = "true";
+    window.open(link,'_blank');
+  }
+}
+</script>
+
+</body>
+</html>
